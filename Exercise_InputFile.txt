@@ -1,0 +1,1 @@
+This is a test file to check if metadata and payload are transeferred correctly to 'messages/out' folder using inerlok adapter.

@@ -1,0 +1,93 @@
+<adapter>
+  <unique-id>pedantic-noether</unique-id>
+  <start-up-event-imp>com.adaptris.core.event.StandardAdapterStartUpEvent</start-up-event-imp>
+  <heartbeat-event-imp>com.adaptris.core.HeartbeatEvent</heartbeat-event-imp>
+  <shared-components>
+    <connections/>
+    <services/>
+  </shared-components>
+  <event-handler class="default-event-handler">
+    <unique-id>DefaultEventHandler</unique-id>
+    <connection class="null-connection">
+      <unique-id>gigantic-allen</unique-id>
+    </connection>
+    <producer class="null-message-producer">
+      <unique-id>adoring-noyce</unique-id>
+    </producer>
+  </event-handler>
+  <message-error-handler class="null-processing-exception-handler">
+    <unique-id>hopeful-hamilton</unique-id>
+  </message-error-handler>
+  <failed-message-retrier class="no-retries">
+    <unique-id>sleepy-lamport</unique-id>
+  </failed-message-retrier>
+  <channel-list>
+    <channel>
+      <consume-connection class="null-connection">
+        <unique-id>elegant-euclid</unique-id>
+      </consume-connection>
+      <produce-connection class="null-connection">
+        <unique-id>tender-goldstine</unique-id>
+      </produce-connection>
+      <workflow-list>
+        <standard-workflow>
+          <consumer class="fs-consumer">
+            <unique-id>romantic-noyce</unique-id>
+            <destination class="configured-consume-destination">
+              <destination>messages/in</destination>
+            </destination>
+            <poller class="fixed-interval-poller">
+              <poll-interval>
+                <unit>SECONDS</unit>
+                <interval>20</interval>
+              </poll-interval>
+            </poller>
+            <create-dirs>true</create-dirs>
+            <file-sorter class="fs-sort-none"/>
+            <wip-suffix>.wip</wip-suffix>
+          </consumer>
+          <service-collection class="service-list">
+            <unique-id>hopeful-lalande</unique-id>
+            <services>
+              <log-message-service>
+                <unique-id>elated-clarke</unique-id>
+                <log-level>DEBUG</log-level>
+              </log-message-service>
+            </services>
+          </service-collection>
+          <producer class="fs-producer">
+            <unique-id>modest-khorana</unique-id>
+            <destination class="configured-destination">
+              <destination>messages/out</destination>
+            </destination>
+            <create-dirs>true</create-dirs>
+            <fs-worker class="fs-append-file"/>
+            <filename-creator class="metadata-file-name-creator">
+              <metadata-key>originalname</metadata-key>
+              <default-name>MetadataFileNameCreator_default</default-name>
+            </filename-creator>
+          </producer>
+          <produce-exception-handler class="null-produce-exception-handler"/>
+          <unique-id>distracted-hodgkin</unique-id>
+          <message-metrics-interceptor>
+            <unique-id>distracted-hodgkin-MessageMetrics</unique-id>
+            <timeslice-duration>
+              <unit>MINUTES</unit>
+              <interval>5</interval>
+            </timeslice-duration>
+            <timeslice-history-count>12</timeslice-history-count>
+          </message-metrics-interceptor>
+          <in-flight-workflow-interceptor>
+            <unique-id>distracted-hodgkin-InFlight</unique-id>
+          </in-flight-workflow-interceptor>
+        </standard-workflow>
+      </workflow-list>
+      <unique-id>affectionate-murdock</unique-id>
+      <auto-start>true</auto-start>
+    </channel>
+  </channel-list>
+  <message-error-digester class="standard-message-error-digester">
+    <unique-id>ErrorDigest</unique-id>
+    <digest-max-size>100</digest-max-size>
+  </message-error-digester>
+</adapter>

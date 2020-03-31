@@ -1,0 +1,157 @@
+Bootstrap of Interlok 3.8.4-RELEASE(2019-04-29) complete
+TRACE [main] [BootstrapProperties] Properties resource is [bootstrap.properties]
+TRACE [main] [PropertyResolver] Parsing PropertyResolver URL [jarfileCAdaptrisInterloklibinterlok-core.jar!META-INFcomadaptriscoremanagementpropertiesresolver]
+TRACE [main] [PropertyResolver] Registered Decoders  {password=com.adaptris.core.management.properties.PasswordDecoder}
+TRACE [main] [BootstrapProperties] Adding org.jruby.embed.localcontext.scope=threadsafe to system properties
+TRACE [main] [BootstrapProperties] Adding org.jboss.logging.provider=slf4j to system properties
+TRACE [main] [RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.fs.FsProducer
+TRACE [main] [RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+TRACE [main] [RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NoRetries
+TRACE [main] [RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullProcessingExceptionHandler
+TRACE [main] [RuntimeInfoComponentFactory] No RuntimeInfoComponent for class com.adaptris.core.NullLogHandler
+TRACE [main] [AdapterManager] Registering com.adaptris.core.runtime.AdapterManager against com.adaptristype=Adapter,id=pedantic-noether
+TRACE [main] [ChannelManager] Registering com.adaptris.core.runtime.ChannelManager against com.adaptristype=Channel,adapter=pedantic-noether,id=affectionate-murdock
+TRACE [main] [WorkflowManager] Registering com.adaptris.core.runtime.WorkflowManager against com.adaptristype=Workflow,adapter=pedantic-noether,channel=affectionate-murdock,id=distracted-hodgkin
+TRACE [main] [MessageMetricsStatistics] Registering com.adaptris.core.interceptor.MessageMetricsStatistics against com.adaptristype=Metrics,adapter=pedantic-noether,channel=affectionate-murdock,workflow=distracted-hodgkin,id=distracted-hodgkin-MessageMetrics
+TRACE [main] [FsConsumerMonitor] Registering com.adaptris.core.fs.FsConsumerMonitor against com.adaptristype=ConsumerMonitor,adapter=pedantic-noether,channel=affectionate-murdock,workflow=distracted-hodgkin,id=romantic-noyce
+TRACE [main] [MessageInFlight] Registering com.adaptris.core.interceptor.MessageInFlight against com.adaptristype=InFlight,adapter=pedantic-noether,channel=affectionate-murdock,workflow=distracted-hodgkin,id=distracted-hodgkin-InFlight
+TRACE [main] [StandardMessageErrorDigesterJmx] Registering com.adaptris.core.runtime.StandardMessageErrorDigesterJmx against com.adaptristype=MessageErrorDigest,adapter=pedantic-noether,id=ErrorDigest
+TRACE [main] [AdapterComponentChecker] Registering com.adaptris.core.runtime.AdapterComponentChecker against com.adaptristype=ComponentChecker,adapter=pedantic-noether,id=AdapterComponentChecker
+INFO  [main] [UnifiedBootstrap] Adapter created
+TRACE [main] [XStreamConfigManager] persisting [filelocalhost.configadapter.xml] to [filelocalhost.configadapter-backup.xml]
+TRACE [main] [ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#init([java.util.Properties])
+TRACE [main] [ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#init([java.util.Properties])
+TRACE [main] [JmxRemoteComponent] JMX Protocol=[jmxmp]
+TRACE [main] [JmxRemoteComponent] JMX Environment  {}
+TRACE [main] [JmxRemoteComponent] MBean [com.adaptristype=JmxConnectorServer] registered
+TRACE [SimpleBootstrap] [ManagementComponentFactory] com.adaptris.core.management.jetty.JettyServerComponent#start()
+DEBUG [EmbeddedJettyStart] [JettyServerComponent] Creating Jetty wrapper
+TRACE [EmbeddedJettyStart] [JettyServerComponent] Create Server from XML
+TRACE [EmbeddedJettyStart] [JettyServerComponent] Connecting to configured URL fileCAdaptrisInterlok.configjetty.xml
+TRACE [EmbeddedJettyStart] [JettyServerComponent] Additional properties for XML Config {}
+WARN  [EmbeddedJettyStart] [AbstractConnector] Ignoring deprecated socket close linger time
+TRACE [SimpleBootstrap] [ManagementComponentFactory] com.adaptris.core.management.jmx.JmxRemoteComponent#start()
+INFO  [SimpleBootstrap] [BootstrapProperties] Could not parse numerical value [null] for key [operationTimeout] - using default value [120000]
+DEBUG [JmxRemoteComponent] [JmxRemoteComponent] Starting JMXConnectorServer  com.adaptristype=JmxConnectorServer
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() Adapter(pedantic-noether)
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Prepare() FixedIntervalPoller
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Prepare() LogMessageService(elated-clarke)
+WARN  [JMX-Request-0] [Adapter] [Adapter(pedantic-noether)] has a MessageErrorHandler with no behaviour; messages may be discarded upon exception
+DEBUG [JMX-Request-0] [Adapter] FailedMessageRetrier []
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() EventEmissary
+DEBUG [JmxRemoteComponent] [JmxRemoteComponent] Started JMXConnectorServer  com.adaptristype=JmxConnectorServer
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() NullConnection(gigantic-allen)
+TRACE [JMX-Request-0] [ClosedState] Initialised [NullConnection(gigantic-allen)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() NullMessageProducer(adoring-noyce)
+TRACE [JMX-Request-0] [ClosedState] Initialised [DefaultEventHandler(DefaultEventHandler)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() EventEmissary
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() NullMessageProducer(adoring-noyce)
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() NullConnection(gigantic-allen)
+TRACE [JMX-Request-0] [InitialisedState] Started [NullConnection(gigantic-allen)]
+TRACE [JMX-Request-0] [ClosedState] Started [DefaultEventHandler(DefaultEventHandler)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() SharedComponentList
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() StandardMessageErrorDigester(ErrorDigest)
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() NullProcessingExceptionHandler(hopeful-hamilton)
+TRACE [JMX-Request-0] [ClosedState] Initialised [NullProcessingExceptionHandler(hopeful-hamilton)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() ChannelList
+TRACE [JMX-Request-0] [ChannelList] Channels that can be manipulated are [affectionate-murdock]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() Channel(affectionate-murdock)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() NullConnection(tender-goldstine)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [NullConnection(tender-goldstine)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() NullConnection(elegant-euclid)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [NullConnection(elegant-euclid)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() WorkflowList
+TRACE [JMX-Request-0affectionate-murdock.INIT] [WorkflowList] Workflows that can be manipulated are [distracted-hodgkin]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() StandardWorkflow(distracted-hodgkin)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() MessageMetricsInterceptor(distracted-hodgkin-MessageMetrics)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() StandardStatisticManager
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [MessageMetricsInterceptor(distracted-hodgkin-MessageMetrics)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() InFlightWorkflowInterceptor(distracted-hodgkin-InFlight)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [InFlightWorkflowInterceptor(distracted-hodgkin-InFlight)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() FsProducer(modest-khorana)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() ServiceList(hopeful-lalande)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() LogMessageService(elated-clarke)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [LogMessageService(elated-clarke)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [ServiceList(hopeful-lalande)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() FsConsumer(romantic-noyce)
+TRACE [JMX-Request-0affectionate-murdock.INIT] [LifecycleHelper] Executing Init() FixedIntervalPoller
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [FsConsumer(romantic-noyce)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [StandardWorkflow(distracted-hodgkin)]
+TRACE [JMX-Request-0affectionate-murdock.INIT] [ClosedState] Initialised [Channel(affectionate-murdock)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Init() NoRetries(sleepy-lamport)
+INFO  [JMX-Request-0] [Adapter] Adapter(pedantic-noether) Initialised
+TRACE [JMX-Request-0] [ClosedState] Initialised [Adapter(pedantic-noether)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() StandardMessageErrorDigester(ErrorDigest)
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() NullProcessingExceptionHandler(hopeful-hamilton)
+TRACE [JMX-Request-0] [InitialisedState] Started [NullProcessingExceptionHandler(hopeful-hamilton)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() ChannelList
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() Channel(affectionate-murdock)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() NullConnection(tender-goldstine)
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [NullConnection(tender-goldstine)]
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() WorkflowList
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() StandardWorkflow(distracted-hodgkin)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() MessageMetricsInterceptor(distracted-hodgkin-MessageMetrics)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() StandardStatisticManager
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [MessageMetricsInterceptor(distracted-hodgkin-MessageMetrics)]
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() InFlightWorkflowInterceptor(distracted-hodgkin-InFlight)
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [InFlightWorkflowInterceptor(distracted-hodgkin-InFlight)]
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() FsProducer(modest-khorana)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() ServiceList(hopeful-lalande)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() LogMessageService(elated-clarke)
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [LogMessageService(elated-clarke)]
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [ServiceList(hopeful-lalande)]
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() FsConsumer(romantic-noyce)
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() FixedIntervalPoller
+TRACE [JMX-Request-0affectionate-murdock.START] [FixedIntervalPoller] Scheduled java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1c79842f
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [FsConsumer(romantic-noyce)]
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [StandardWorkflow(distracted-hodgkin)]
+TRACE [JMX-Request-0affectionate-murdock.START] [LifecycleHelper] Executing Start() NullConnection(elegant-euclid)
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [NullConnection(elegant-euclid)]
+TRACE [JMX-Request-0affectionate-murdock.START] [InitialisedState] Started [Channel(affectionate-murdock)]
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() NoRetries(sleepy-lamport)
+TRACE [JMX-Request-0] [LifecycleHelper] Executing Start() SharedComponentList
+INFO  [JMX-Request-0] [Adapter] Adapter(pedantic-noether) Started
+TRACE [JMX-Request-0] [ClosedState] Started [Adapter(pedantic-noether)]
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+TRACE [EmbeddedJettyStart] [BootstrapProperties] Properties resource is [bootstrap.properties]
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+DEBUG [EmbeddedJettyStart] [JettyServerComponent] JettyServerComponent Started
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] start processing msg [DefaultAdaptrisMessageImp[uniqueId=727968a6-057e-4d0b-b082-b2a151088c3e,metadata=[[fsFileSize]=[0], [fsConsumeDir]=[Cmessagesin], [fsParentDir]=[in], [originalname]=[New Text Document.txt], [lastmodified]=[1585684728197]]]]
+DEBUG [distracted-hodgkin@affectionate-murdock] [ServiceList] Executing doService on [LogMessageService(elated-clarke)]
+DEBUG [distracted-hodgkin@affectionate-murdock] [LogMessageService] DefaultAdaptrisMessageImp[uniqueId=727968a6-057e-4d0b-b082-b2a151088c3e,metadata=[[fsFileSize]=[0], [adpnextmlemarkersequence]=[1], [originalname]=[New Text Document.txt], [fsConsumeDir]=[Cmessagesin], [lastmodified]=[1585684728197], [fsParentDir]=[in]],payload=]
+DEBUG [distracted-hodgkin@affectionate-murdock] [FsProducer] msg produced to destination [filemessagesout]
+INFO  [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] message [727968a6-057e-4d0b-b082-b2a151088c3e] processed in [37] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [1] messages [51] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] start processing msg [DefaultAdaptrisMessageImp[uniqueId=c0cf9f32-35c2-42b2-807f-ff4e9b7911d9,metadata=[[fsFileSize]=[0], [fsConsumeDir]=[Cmessagesin], [fsParentDir]=[in], [originalname]=[helloTest.txt], [lastmodified]=[1585684739569]]]]
+DEBUG [distracted-hodgkin@affectionate-murdock] [ServiceList] Executing doService on [LogMessageService(elated-clarke)]
+DEBUG [distracted-hodgkin@affectionate-murdock] [LogMessageService] DefaultAdaptrisMessageImp[uniqueId=c0cf9f32-35c2-42b2-807f-ff4e9b7911d9,metadata=[[fsFileSize]=[0], [adpnextmlemarkersequence]=[1], [originalname]=[helloTest.txt], [lastmodified]=[1585684739569], [fsConsumeDir]=[Cmessagesin], [fsParentDir]=[in]],payload=]
+DEBUG [distracted-hodgkin@affectionate-murdock] [FsProducer] msg produced to destination [filemessagesout]
+INFO  [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] message [c0cf9f32-35c2-42b2-807f-ff4e9b7911d9] processed in [10] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [1] messages [19] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [2] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [0] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [2] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] start processing msg [DefaultAdaptrisMessageImp[uniqueId=449c5a34-016a-40f3-a3ba-a9f1c1ec4c8a,metadata=[[fsFileSize]=[127], [originalname]=[Exercise_InputFile.txt], [lastmodified]=[1585685068695], [fsConsumeDir]=[Cmessagesin], [fsParentDir]=[in]]]]
+DEBUG [distracted-hodgkin@affectionate-murdock] [ServiceList] Executing doService on [LogMessageService(elated-clarke)]
+DEBUG [distracted-hodgkin@affectionate-murdock] [LogMessageService] DefaultAdaptrisMessageImp[uniqueId=449c5a34-016a-40f3-a3ba-a9f1c1ec4c8a,metadata=[[fsFileSize]=[127], [originalname]=[Exercise_InputFile.txt], [lastmodified]=[1585685068695], [adpnextmlemarkersequence]=[1], [fsConsumeDir]=[Cmessagesin], [fsParentDir]=[in]],payload=This is a test file to check if metadata and payload are transeferred correctly to 'messagesout' folder using inerlok adapter.]
+DEBUG [distracted-hodgkin@affectionate-murdock] [FsProducer] msg produced to destination [filemessagesout]
+INFO  [distracted-hodgkin@affectionate-murdock] [StandardWorkflow] message [449c5a34-016a-40f3-a3ba-a9f1c1ec4c8a] processed in [3] ms
+TRACE [distracted-hodgkin@affectionate-murdock] [StandardStatisticManager] Standard statistic manager skipping timeslice producer.
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [1] messages [10] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
+DEBUG [distracted-hodgkin@affectionate-murdock] [FixedIntervalPoller] time to process [0] messages [1] ms
