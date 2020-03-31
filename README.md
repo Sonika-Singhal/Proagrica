@@ -18,4 +18,8 @@ Console log for the test
 Test file for the exercise
 
 ## Feedback
+* Software installation is quite straightforward. Followed the instructions on the recommended resources and it just worked as expected.
+* It took some time to hang of the software how it works. YouTube videos were quite useful for product understanding.
+* Once I understood how it works, it was quite easy to add/remove components to try various built in configurations.
+* Some of the components look very similar but was unable to distinguish the difference eg FS and FileSystem components.
 
